@@ -8,11 +8,11 @@ namespace Tyuiu.OsadetsAA.Sprint2.Task5.V11.Test
         public void ValidFindDateOfNextDay()
         {
             DataService ds = new DataService();
-            int g = 2022;
-            int m = 6;
-            int n = 25;
+            int g = 2023;
+            int m = 9;
+            int n = 8;
             var res = ds.FindDateOfNextDay(g, m, n);
-            string wait = "2022626";
+            string wait = "09.09.2023";
             Assert.AreEqual(wait, res);
         }
     }

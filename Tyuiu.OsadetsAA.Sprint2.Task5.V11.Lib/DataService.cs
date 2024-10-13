@@ -62,15 +62,15 @@ namespace Tyuiu.OsadetsAA.Sprint2.Task5.V11.Lib
             string y = Convert.ToString(g);
             string z = Convert.ToString(m);
             string x = Convert.ToString(n);
-            if (n < 10)
+            if (n < 10 && m < 10)
             {
-                return "0" + x + "." + z + "." + y;
+                return "0" + x + "." + "0" + z + "." + y;
             }
             else
             {
-                if (n < 10  && m < 10)
+                if (n < 10)
                 {
-                    return "0" + x + "." + "0" + z + "." + y; 
+                    return "0" + x + "." + z + "." + y; 
                 }
                 else
                 {
