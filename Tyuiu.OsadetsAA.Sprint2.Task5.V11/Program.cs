@@ -33,8 +33,32 @@ namespace Tyuiu.OsadetsAA.Sprint2.Task5.V11
             Console.WriteLine("***************************************************************************");
 
             var res = ds.FindDateOfNextDay(g, m, n);
-            Console.WriteLine(ds.FindDateOfNextDay(g, m, n));
-            Console.ReadKey();
+            string y = Convert.ToString(g);
+            string z = Convert.ToString(m);
+            string x = Convert.ToString(n);
+
+            if (n < 10 && m < 10)
+            {
+                Console.WriteLine("0" + x + "." + "0" + z + "." + y);
+            }
+            else
+            {
+                if (n < 10)
+                {
+                    Console.WriteLine("0" + x + "." + z + "." + y);
+                }
+                else
+                {
+                    if (m < 10)
+                    {
+                        Console.WriteLine(n + "." + "0" + z + "." + y);
+                    }
+                    else
+                    {
+                            Console.WriteLine(x + "." + z + "." + y);
+                    }
+                }
+            }
         }
     }
 }

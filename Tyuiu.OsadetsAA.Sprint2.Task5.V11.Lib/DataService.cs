@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint2;
+﻿using System.ComponentModel.Design;
+using tyuiu.cources.programming.interfaces.Sprint2;
 namespace Tyuiu.OsadetsAA.Sprint2.Task5.V11.Lib
 {
     public class DataService : ISprint2Task5V11
@@ -61,7 +62,28 @@ namespace Tyuiu.OsadetsAA.Sprint2.Task5.V11.Lib
             string y = Convert.ToString(g);
             string z = Convert.ToString(m);
             string x = Convert.ToString(n);
-            return x + "." + z + "." + y;
+            if (n < 10)
+            {
+                return "0" + x + "." + z + "." + y;
+            }
+            else
+            {
+                if (n < 10  && m < 10)
+                {
+                    return "0" + x + "." + "0" + z + "." + y; 
+                }
+                else
+                {
+                    if (m < 10)
+                    {
+                        return n + "." + "0" + z + "." + y;
+                    }
+                    else
+                    {
+                        return x + "." + z + "." + y;
+                    }
+                }
+            }
         }
     }
 }
