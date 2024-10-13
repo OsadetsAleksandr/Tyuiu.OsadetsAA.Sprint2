@@ -32,7 +32,9 @@ namespace Tyuiu.OsadetsAA.Sprint2.Task5.V11
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
+            var res = ds.FindDateOfNextDay(g, m, n);
             Console.WriteLine(ds.FindDateOfNextDay(g, m, n));
+            Console.ReadKey();
         }
     }
 }

@@ -61,7 +61,7 @@ namespace Tyuiu.OsadetsAA.Sprint2.Task5.V11.Lib
             string y = Convert.ToString(g);
             string z = Convert.ToString(m);
             string x = Convert.ToString(n);
-            return y + z + x;
+            return x + "." + z + "." + y;
         }
     }
 }
