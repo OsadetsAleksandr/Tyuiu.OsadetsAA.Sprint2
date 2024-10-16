@@ -76,7 +76,7 @@ namespace Tyuiu.OsadetsAA.Sprint2.Task5.V11.Lib
                 {
                     if (m < 10)
                     {
-                        return n + "." + "0" + z + "." + y;
+                        return x + "." + "0" + z + "." + y;
                     }
                     else
                     {
